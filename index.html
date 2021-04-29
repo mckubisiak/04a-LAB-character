@@ -9,62 +9,67 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Dino Friends</title>
 </head>
 
 <body>
     <header>
         <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
+            Kubi's wacky character creation 
         </div>
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+            <img id="character" class="main-logo" src="assets/alchemy-logo.png" />
+            <br>
+            <h3>Choose your dino friend </h3>
+            <div>
+                <label for="size">Choose your size:</label>
+                <select name="size" id="size">
+                    <option value="https://i.insider.com/5c86a8e5262898785948cd9e?width=700">little dino</option>
+                    <option value="https://i.pinimg.com/originals/19/69/82/196982ffb242fa56cf6c90af040f3713.png">medium dino</option>
+                    <option value="https://i.pinimg.com/originals/cf/5e/c8/cf5ec899d25cfc3eb0570c4c43b76ad2.png">big dino</option>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+                </select>
+                <br>
+                <label for="shield">Choose your shield:</label>
+                <select name="shield" id="shield">
+                    <option value="5px">1</option>
+                    <option value="10px">2</option>
+                    <option value="15px">3</option>
+                    <option value="20px">4</option>
+                    <option value="25px">5</option>
+                    <option value="30px">6</option>
+                    <option value="35px">7</option>
+                    <option value="45px">8</option>
+                    <option value="50px">9</option>
+                </select>
+                <br>
+                <label for="invisibilty">Choose your cloaking level:</label>
+                <select name="invisibilty" id="invisibilty">
+                    <option value=".9">1</option>
+                    <option value=".8">2</option>
+                    <option value=".7">3</option>
+                    <option value=".6">4</option>
+                    <option value=".5">5</option>
+                    <option value=".4">6</option>
+                    <option value=".3">7</option>
+                    <option value=".2">8</option>
+                    <option value=".1">9</option>
+                </select>
+                <br>
+                Choose your color-pick
+                <input id="color-pick" type="color" id="favcolor" name="favcolor" value="#ffffff">
+                <br>
+                
+                <button id="create-button" class="button">create character</button>
+
+            </div>
 
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2021 AlKubihemy Code Lab</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
